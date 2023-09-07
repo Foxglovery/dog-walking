@@ -6,7 +6,7 @@ document.addEventListener(
     "click", 
     (clickEvent)=>{//when clicked, passes item clicked to func
         const whatWasClicked = clickEvent.target//saves the target clicked on to const
-        debugger
+        
         if (whatWasClicked.dataset.type === "walker") {
             window.alert(`This Walker works in ${whatWasClicked.dataset.city}`)
         }
