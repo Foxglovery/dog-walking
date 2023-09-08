@@ -19,7 +19,9 @@ document.addEventListener(
 
                 window.alert(`${walkerAssignments[0]} is servicing this city.`)
             } else if (walkerAssignments.length >  1) {
-                window.alert(`${walkerAssignments.join(", ")} are servicing this city`)
+                    const walkerAssignmentString = walkerAssignments.toString()
+                    console.log(walkerAssignmentString)
+                window.alert(`${walkerAssignments.join(" and ")} are servicing this city`)
             } else if (walkerAssignments.length === 0) {
                 window.alert(`There are no walkers servicing this city. Too bad.`)
             }
